@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .topnav {
+    background: #f8f8f8;
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .topnav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .mainnav {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002f6c;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .menu a:hover {
+    color: #002f6c;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+  }
+  
+  .search button {
+    padding: 8px 15px;
+    background: #002f6c;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .blah {
+    height: 600px;
+    background: url('images/hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .blahco {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .blah h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .ctabutton {
+    padding: 15px 40px;
+    background: #002f6c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.7s;
+  }
+
+  .ctabutton:hover{
+    background-color: #0e4495;
+  }
+  
+  .cat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px;
+  }
+  
+  .catcard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .catcard img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .catcard:hover img {
+    transform: scale(1.05);
+  }
+  
+  .catcard h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .slink {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .fea {
+    padding: 50px;
+  }
+  
+  .fea h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002f6c;
+  }
+  
+  .pg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .pgcard {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .pgcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .pgcard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .pgcard h4 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .price {
+    color: #002f6c;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .pgcard button {
+    padding: 10px 20px;
+    background: #002f6c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pgcard button:hover {
+    background: #001f4c;
+  }
+  
+  
+  footer {
+    background: #002f6c;
+    color: white;
+    padding: 50px 0 20px;
+  }
+  
+  .fc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .fcs h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .fcs a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .sl {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .sl a {
+    font-size: 20px;
+  }
+  
+  .fcb {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+ 
